@@ -16,17 +16,19 @@
             <div class="row justify-content-center gy-2" id="burger" style="display: none; margin: 20px 0px 0px 0px;"></div>
           <div class="col-sm-1" id="logoCont">
             <div class="row" style="column-gap: 25%;">
-              <div class="col-12" id="logo"><img src="Assets/Images/Mark.svg" class="img-fluid"></div> <!-- Logo gets too big on phone -->
+              <a href="index.html"><div class="col-12" id="logo"><img src="Assets/Images/Mark.svg" class="img-fluid"></div></a> <!-- Logo gets too big on phone -->
               <div class="col-3" id="burgerBtnCont" style="display:none;"><button type="button" id="burgerBtn" onclick="showMenu(true)"><img src="Assets/Images/Burger_Menu.svg" class="img-fluid" id="burger-image"></button></div>
             </div>
           </div>
           <div class="col-auto" id="header-offset">
-            <button class="headerbutton" type="button" onclick="navToNode('cs')"><div class="header">news</div></button>
-            <button class="headerbutton" type="button" onclick="navToNode('about')"><div class="header">projects</div></button>
-            <button class="headerbutton" type="button" onclick="navToNode('contact')"><div class="header">principles</div></button>
-            <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">people</div></button>
-            <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">social</div></button>
-            <button class="headerbutton" type="button" onclick="navToNode('basement')"><div class="header">contact</div></button>
+            <div class="d-flex flex-row gap-3">
+              <a href="news.html" class="headerbutton"><div class="header">news</div></a>
+              <a href="#projects" class="headerbutton"><div class="header">projects</div></a>
+              <a href="#principles" class="headerbutton"><div class="header">principles</div></a>
+              <a href="#people" class="headerbutton"><div class="header">people</div></a>
+              <a href="#social" class="headerbutton"><div class="header">social</div></a>
+              <a href="#contact" class="headerbutton"><div class="header">contact</div></a>
+            </div>
           </div>
             <!-- <div class="col-auto">
             <button class="headerbutton" type="button" onclick="navToNode('about')"><div class="header">projects</div></button>
@@ -65,7 +67,7 @@
         <div class="row justify-content-center" style="padding: 64px; background-color: #242424; min-width: 100%"> <!-- Coming Soon -->
           <div class="col-5"><div class="connect" style="text-align: center;" id="cs">PARHELION <br>
             <span class="bodytxt" style="color: #FFF7ED; text-align: center;">In the near future, the Sun will shine bright enough to send humanity back to the Stone Age, and you will be the last, desperate sacrifice to its greatness.</span>
-            <button type="button" class="mainbutton-inv" style="margin-top: 24px;">COMING SOON</button>
+            <button type="button" class="mainbutton-inv" style="margin-top: 24px; margin-left: 0px;">COMING SOON</button>
           </div>
           </div>
         </div>
@@ -73,7 +75,7 @@
       </div>
         <div class="d-flex justify-content-center" style="padding: 0; margin: auto; max-width: 1200px;"> <!-- Second column container-->
           <div class="row align-items-center"style="margin: 0px 24px 64px;">
-          <div class="col-12" style="margin-bottom: 64px;"><span class="title">01. PROJECTS</span>
+          <div class="col-12" id="projects" style="margin-bottom: 64px;"><span class="title">01. PROJECTS</span>
           <div class="container">
             <div class="row">
               <div class="col">
@@ -104,16 +106,16 @@
           </div>
           </div>
         <div class="row align-items-center" id="about" style="margin: 0px 24px 64px; max-width: 1200px;"> <!-- About Us -->
-          <div class="col-12" style="margin-bottom: 20px;"><span class="title">02. PRINCIPLES</span></div>
+          <div class="col-12" id="principles" style="margin-bottom: 20px;"><span class="title">02. PRINCIPLES</span></div>
           <div class="col-sm-6" style="margin-bottom: 20px;">
                   <img src="Assets/Images/Roots.svg" class="img-fluid">
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;">
-              <span class="bodytxt"><span class="connect">ROOTS</span>Our philosophy is a radical acceptance of the simple fact - we accept that our lives - be it our cultural heritage or worldviews - will seep and creep into whatever we set our mind. However, we also vow to see the world as a diverse infinity as it is, and translate it into our with care and love for other lived experiences.</span>
+              <span class="bodytxt"><span class="connect_blck">ROOTS</span>Our philosophy is a radical acceptance of the simple fact - we accept that our lives - be it our cultural heritage or worldviews - will seep and creep into whatever we set our mind. However, we also vow to see the world as a diverse infinity as it is, and translate it into our with care and love for other lived experiences.</span>
             </div>
 
             <div class="col-sm-6" style="margin-bottom: 20px;">
-              <span class="bodytxt"><span class="connect">CRAFT</span>As a small team consisting of only two people - bedroom developers if you will - we see our work more like craft and less than production. Every element, no matter how small, is painstaking and intentional, forming a harmonious structure where every action, detail and emotion matters.</span>
+              <span class="bodytxt"><span class="connect_blck">CRAFT</span>As a small team consisting of only two people - bedroom developers if you will - we see our work more like craft and less than production. Every element, no matter how small, is painstaking and intentional, forming a harmonious structure where every action, detail and emotion matters.</span>
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;"> 
               <img src="Assets/Images/Craft.svg" class="img-fluid"> <!-- Has to be moved on top of the text when accessed through phone -->
@@ -123,12 +125,12 @@
                   <img src="Assets/Images/Poise.svg" class="img-fluid">
             </div>
             <div class="col-sm-6" style="margin-bottom: 20px;">
-              <span class="bodytxt"><span class="connect">POISE</span>Today, the world ends. Gentle moonlight illuminates a serpent opening it’s jaw, a man who has no mercy for another, a dog lashed one too many times. Don’t worry. Tomorrow, pick up the pieces and try again.</span>
+              <span class="bodytxt"><span class="connect_blck">POISE</span>Today, the world ends. Gentle moonlight illuminates a serpent opening it’s jaw, a man who has no mercy for another, a dog lashed one too many times. Don’t worry. Tomorrow, pick up the pieces and try again.</span>
             </div>
             
           </div>
           <div class="row justify-content-around" style="margin: 0px 24px 64px; max-width: 1200px;"> <!-- Dev profiles -->
-            <div class="col-12" style="margin-bottom: 20px;"><span class="title">03. PEOPLE</span></div>
+            <div class="col-12" id="people" style="margin-bottom: 20px;"><span class="title">03. PEOPLE</span></div>
             <div class="col-sm-6" style="margin-bottom: 20px;">
               <div class="d-flex flex-row">
                 <span class="names">VINETA</span>
@@ -168,6 +170,9 @@
             </div>
 
           </div>
+        </div>
+        <div class="col-12" id="social" style="width: 100%;">
+          <img src="Assets/Images/Brushstroke_Top.png" class="img-fluid">
         </div>
           <div class="row justify-content-center" id="contact" style="background-color: #242424; padding: 60px 0px; flex-direction: row;"> <!-- Contact -->
             <div class="d-flex align-items-left flex-row" style="padding: 0; margin: auto; max-width: 1200px;">
@@ -209,7 +214,7 @@
                 </div>
               </div>
               <div class="w-100" style="margin-top: 64px;"></div>
-                  <div class="col">
+                  <div class="col" id="contact">
                     <div class="btn-group btn-group-sm-6" role="group" style="row-gap: 8px; margin: 0px;">
                     <button class="headerbutton" type="button" onclick="navToNode('cs')"><div class="footer">news</div></button>
                     <button class="headerbutton" type="button" onclick="navToNode('about')"><div class="footer">projects</div></button>
