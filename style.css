@@ -339,6 +339,17 @@ padding: 0;
   max-height: auto;
 }
 
+.email-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.email-button{
+  background-color: #FFF7ED;
+  border-radius: 5px;
+}
+
 
 
 
